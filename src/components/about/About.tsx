@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Separator from "../helpers/separator/Separator";
+import Title from "../helpers/title/title";
 
 const About = () => {
   return (
-    <div className="w-[80%] m-auto mt-24">
-      <h1 className="my-4 text-[35px] font-bold">About</h1>
-      <div className="border-b-4 border-white my-4 w-[125px]"></div>
+    <div className="w-[80%] m-auto my-24">
+      <Title title="About"/>
+      <Separator/>
       <div className="flex flex-row ">
-        <div className="w-[50%]">
+        <div className="w-[50%] mr-10">
           <p className="my-5 text-[20px]">
             Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
           </p>
@@ -21,7 +23,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-[50%] flex justify-center items-center">
-          <Image src="/profile.png" alt="Self profile image" layout="intrinsic" width={500} height={500} className="object-cover"/>
+          <Image src="/profile.png" alt="Self profile image" width={500} height={500} className="object-cover"/>
         </div>
       </div>
     </div>
