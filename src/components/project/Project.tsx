@@ -13,9 +13,16 @@ const Project = () => {
           I enjoy working on projects as an outlet for my creativity. As well as that, it provides a fun way to learn new technologies or improve on my current skills. Below are some of my favourite ones.
         </p>
       </div>
-      <FeaturedProject title="Trace" description="Website for volunteers to record their efforts and receive redeemable  credits as a reward. They can redeem this credits in future to request assistance of their own. Implemented custodial wallets with psuedo meta-transactions." languages={["React", "TypeScript", "Supabase", "Solidity", "Smart Contracts"]} githubLink="https://github.com/Jexarx121/Trace" imageLink="/trace.png"/>
-      <FeaturedProject title="Trace" description="Website to learn Next.js and MongoDB. Allows blog post interactions through CRUD operations in admin dashboard via custom NextAPI. Implemented authentication through credentials and OAuth with NextAuth." languages={["React", "Next.js", "JavaScript", "MongoDB", "NextAuth"]} githubLink="https://github.com/Jexarx121/next-posts" imageLink="/next-posts.png"/>
-      <ArchivedProject/>
+      <FeaturedProject title="Trace" description="Website for volunteers to record their efforts and receive redeemable  credits as a reward. They can redeem this credits in future to request assistance of their own. Implemented custodial wallets with psuedo meta-transactions along with ERC-20 smart contract." languages={["React", "TypeScript", "Figma", "Supabase", "Solidity", "Smart Contracts"]} imageLink="/trace.png" githubLink="https://github.com/Jexarx121/Trace" projectLink=""/>
+      <FeaturedProject title="Next-Post" description="Website to learn Next.js and MongoDB. Allows blog post interactions through CRUD operations in admin dashboard via custom NextAPI. Implemented authentication through credentials and OAuth with NextAuth. Details and blogs stored and fetched from MongoDB." languages={["React", "Next.js", "JavaScript", "MongoDB", "NextAuth", "Middleware"]} imageLink="/next-posts.png" githubLink="https://github.com/Jexarx121/next-posts" projectLink="https://next-posts-alpha.vercel.app/"/>
+      <div className="items-center flex flex-col justify-center mb-10">
+        <Title title="Archived Projects"/>
+        <Separator/>
+      </div>
+      <div className="w-[70%] m-auto flex flex-row gap-10">
+        <ArchivedProject title="Krypto" description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." languages={["React", "JavaScript", "Solidity", "Metamask"]} githubLink="https://github.com/Jexarx121/Krypto" projectLink=""/>
+        <ArchivedProject title="Duel Ascent" description="Multiplayer university game project developed in a group of 6 using Phaser 4 game engine. Responsible for design of all sprites and scenes (in Figma). Contributed to battle scene with card activation and drag and drop functionality." languages={["JavaScript", "Phaser", "Figma", ]} githubLink="https://github.com/nickCompSci/teamProject" projectLink=""/>
+      </div>
     </div>
   )
 }

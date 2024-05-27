@@ -4,7 +4,7 @@ import Title from "../helpers/title/title";
 
 const About = () => {
   return (
-    <div className="w-[80%] m-auto my-24">
+    <div className="w-[80%] m-auto mb-24">
       <Title title="About"/>
       <Separator/>
       <div className="flex flex-row ">
