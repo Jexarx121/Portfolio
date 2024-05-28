@@ -10,14 +10,16 @@ const Work = () => {
   const [ibm, setIbm] = useState(true);
   const [intern, setIntern] = useState(false);
 
+  const workTitleHoverStyle : string = "hover:text-[#29648A] duration-300 transition hover:border-[#29648A] hover:border-b-2 pb-2"
+
   return (
     <div className="mb-48 w-[60%] m-auto" id="experience">
       <Title title="Previous Work" />
       <Separator/>
       <div className="flex flex-row mb-4">
-        <h2 className={`font-bold text-[30px] ${ibm ? "text-[#29648A] border-b-2 border-[#29648A]" : "text-white hover:text-[#29648A] duration-300 transition"} mr-4 cursor-pointer`}
+        <h2 className={`font-bold text-[30px] ${ibm ? "text-[#29648A] border-b-2 border-[#29648A]" : `text-white ${workTitleHoverStyle}`} mr-4 cursor-pointer`}
           onClick={() => {setIbm(true); setIntern(false)}}>IBM</h2>
-        <h2 className={`font-bold text-[30px] ${intern ? "text-[#29648A] border-b-2 border-[#29648A]" : "text-white hover:text-[#29648A] duration-300 transition"} ,l-4 cursor-pointer`}
+        <h2 className={`font-bold text-[30px] ${intern ? "text-[#29648A] border-b-2 border-[#29648A]" : `text-white ${workTitleHoverStyle}`} ml-4 cursor-pointer`}
           onClick={() => {setIbm(false); setIntern(true)}}>UCC</h2>  
       </div>
       <div>
