@@ -3,7 +3,7 @@ import Title from "../helpers/title/title";
 
 const Contact = () => {
   return (
-    <div className="w-[80%] m-auto my-24">
+    <div className="w-[80%] m-auto mt-24 mb-48" id="contact">
       <Title title="Connect"/>
       <Separator/>
       <p className="w-[50%] mb-5 text-[20px]">
