@@ -1,18 +1,39 @@
+"use client";
+
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Navbar = () => {
   const navLinksStyle : string = "hover:text-[#2E9CCA] transition duration-300 hover:border-[#2E9CCA] hover:border-b-2 pb-2";
+
+  const [navbarMenu, setNavbarMenu] = useState(false);
   
   return (
     <nav className="flex flex-row justify-between">
-      <div className="my-10">
-        <Link href="/" className="text-[40px] bg-[#2E9CCA] px-3 py-[2px] rounded-sm ml-10 font-bold my-5">Z</Link>
+      <div className="md:my-10 my-5">
+        <Link href="/" className="text-[40px] bg-[#2E9CCA] px-3 py-[2px] rounded-sm md:ml-10 font-bold md:my-5 ml-5">Z</Link>
       </div>
-      <div className="my-12">
+      <div className="my-12 md:block hidden">
         <Link href="#about" className={`text-white mx-10 ${navLinksStyle}`}>About</Link>
         <Link href="#experience" className={`text-white mx-10 ${navLinksStyle}`}>Experience</Link>
         <Link href="#projects" className={`text-white mx-10 ${navLinksStyle}`} >Projects</Link>
         <Link href="#contact" className={`text-white mx-10 ${navLinksStyle}`}>Contact</Link>
+      </div>
+      <div className="md:hidden block my-6">
+        <FontAwesomeIcon icon={faBars} className="mr-5 text-4xl text-white cursor-pointer" onClick={() => setNavbarMenu(true)}/>
+        {navbarMenu && (
+          <div className="w-[75%] h-screen absolute z-10 transition duration-500 top-0 right-0 bg-[#464866] flex flex-col items-end overflow-hidden">
+            <FontAwesomeIcon icon={faX} className="text-4xl text-[#2e9cca] my-6 mr-5 cursor-pointer" onClick={() => setNavbarMenu(false)}/>
+            <div className="flex-col flex mt-[30px] w-full px-5">
+              <Link href="#about" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)}>About</Link>
+              <Link href="#experience" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)}>Experience</Link>
+              <Link href="#projects" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)} >Projects</Link>
+              <Link href="#contact" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)}>Contact</Link>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   )
