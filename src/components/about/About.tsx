@@ -7,7 +7,7 @@ const fira_code = Fira_Code({ subsets: ['latin'] });
 
 const About = () => {
   return (
-    <div className="lg:w-[80%] w-[90%] m-auto mb-48" id="about">
+    <div className="lg:w-[80%] sm:w-[90%] w-[100%] sm:p-0 px-8 m-auto mb-48" id="about">
       <Title title="About"/>
       <Separator/>
       <div className="flex lg:flex-row flex-col">

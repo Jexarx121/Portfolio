@@ -5,11 +5,11 @@ import FeaturedProject from "./FeaturedProject";
 
 const Project = () => {
   return (
-    <div className="w-[80%] m-auto mb-48" id="projects">
+    <div className="lg:w-[80%] sm:w-[90%] w-[100%] m-auto mb-48 sm:p-0 px-8" id="projects">
       <div className="mb-8">
         <Title title="Personal Ventures"/>
         <Separator/>
-        <p className="w-[60%] text-[20px]">
+        <p className="lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] text-[20px]">
           I enjoy working on projects as an outlet for my creativity. As well as that, it provides a fun way to learn new technologies or improve on my current skills. Below are some of my favourite ones.
         </p>
       </div>
@@ -19,7 +19,7 @@ const Project = () => {
         <Title title="Archived Projects"/>
         <Separator/>
       </div>
-      <div className="w-[70%] m-auto flex flex-row gap-10">
+      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10">
         <ArchivedProject title="Krypto" description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." languages={["React", "JavaScript", "Solidity", "Metamask"]} githubLink="https://github.com/Jexarx121/Krypto" projectLink=""/>
         <ArchivedProject title="Duel Ascent" description="Multiplayer university game project developed in a group of 6 using Phaser 4 game engine. Responsible for design of all sprites and scenes (in Figma). Contributed to battle scene with card activation and drag and drop functionality." languages={["JavaScript", "Phaser", "Figma", ]} githubLink="https://github.com/nickCompSci/teamProject" projectLink=""/>
       </div>

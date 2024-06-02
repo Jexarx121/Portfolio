@@ -18,13 +18,13 @@ interface ArchivedProjectProps {
 
 const ArchivedProject = ({ title, description, languages, githubLink, projectLink } : ArchivedProjectProps) => {
   return (
-    <div className="w-[70%] m-auto">
+    <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto sm:p-0 px-8">
       <div className="bg-[#464866] rounded-md p-5">
         <Title title={title}/>
         <p>{description}</p>
-        <div className="flex flex-row my-3">
+        <div className="flex flex-row my-3 flex-wrap">
           {languages.map((language, index) => (
-            <p key={index} className={`py-1 rounded-md text-white ${fira_code.className} mr-3`}>{language}</p>
+            <p key={index} className={`py-1 rounded-md text-white ${fira_code.className} mr-5`}>{language}</p>
           ))}
         </div>
         <div className="gap-5 flex flex-row">

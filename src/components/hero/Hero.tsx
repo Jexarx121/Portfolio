@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="md:w-[60%] w-[90%] m-auto min-h-screen flex flex-col mt-28">
+    <div className="lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] m-auto min-h-screen flex flex-col mt-28 sm:p-0 px-8">
       <h1 className="lg:my-6 md:my-5 my-4">Y'hello, my name is</h1>
       <h1 className="text-white sm:text-8xl text-5xl font-bold lg:my-6 md:my-5 my-4">Zhi Jie Chen.</h1>
       <h2 className="text-[#aaabb8] sm:text-8xl text-5xl font-bold lg:my-6 md:my-5 my-4">Fullstack developer.</h2>

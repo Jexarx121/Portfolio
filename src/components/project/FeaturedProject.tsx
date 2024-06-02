@@ -19,11 +19,11 @@ interface FeaturedProjectProps {
 
 const FeaturedProject = ({ title, description, languages, imageLink, githubLink, projectLink } : FeaturedProjectProps) => {
   return (
-    <div className="bg-[#464866] border-[#464866] border-2 rounded-md flex flex-row gap-5 px-5 pb-4  relative mb-20">
-      <div className="w-[70%]">
+    <div className="bg-[#464866] border-[#464866] border-2 rounded-md flex lg:flex-row flex-col gap-5 px-5 pb-4 relative mb-24">
+      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%]">
         <Title title={title}/>
-        <p className="text-[20px] my-4">{description}</p>
-        <div className="flex flex-row gap-4 pb-4">
+        <p className="md:text-[20px] text-[18px] my-4">{description}</p>
+        <div className="flex md:flex-row my-3 flex-wrap gap-4 pb-4">
           {languages.map((language, index) => (
             <p key={index} className={`px-2 py-1 border-[#2E9CCA] rounded-md border-2 text-white ${fira_code.className}`}>{language}</p>
           ))}
@@ -35,8 +35,9 @@ const FeaturedProject = ({ title, description, languages, imageLink, githubLink,
           )}
         </div>
       </div>
-      <div className="w-[40%]">
-        <Image src={imageLink} alt="Trace project homepage" width={500} height={400} className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-[50px] h-[80%]"/>
+      <div className="lg:w-[40%]">
+        <Image src={imageLink} alt="Trace project homepage" width={500} height={400} 
+          className="lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:translate-x-[50px] xl:h-[80%] lg:h-[70%] xl:w-[450px] lg:w-[350px] w-full"/>
       </div>
     </div>
   )
