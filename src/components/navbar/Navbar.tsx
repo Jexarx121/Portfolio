@@ -3,19 +3,46 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const navLinksStyle : string = "hover:text-[#2E9CCA] transition duration-300 hover:border-[#2E9CCA] hover:border-b-2 pb-2";
 
   const [navbarMenu, setNavbarMenu] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const [show, setShow] = useState(true);
+  const [shadows, setShadows] = useState(false);
+
+  const controlNavbar = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY <= 0) {
+      setShadows(false);
+      setShow(true);  // Show navbar when at the top of the page
+    } else if (currentScrollY > prevScrollY) {
+      setShow(false); // Hide navbar when scrolling down
+      setShadows(true);
+    } else {
+      setShow(true);  // Show navbar when scrolling up
+      setShadows(true);
+    }
+
+    setPrevScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [prevScrollY]);
   
   return (
-    <nav className="flex flex-row justify-between">
-      <div className="md:my-10 my-5">
+    <nav className={`flex flex-row justify-between ${show ? `block ${shadows ? 'shadow-slate-900 shadow-2xl' : 'bg-[#25274D] transition duration-500'} bg-[#212345]` : 'hidden'} fixed top-0 w-full z-50`}>
+      <div className="md:mt-8 my-5">
         <Link href="/" className="text-[40px] bg-[#2E9CCA] px-3 py-[2px] rounded-sm md:ml-10 font-bold md:my-5 ml-5">Z</Link>
       </div>
-      <div className="my-12 md:block hidden">
+      <div className="mt-12 md:block hidden">
         <Link href="#about" className={`text-white mx-10 ${navLinksStyle}`}>About</Link>
         <Link href="#experience" className={`text-white mx-10 ${navLinksStyle}`}>Experience</Link>
         <Link href="#projects" className={`text-white mx-10 ${navLinksStyle}`} >Projects</Link>
