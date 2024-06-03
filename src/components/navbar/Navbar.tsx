@@ -38,7 +38,7 @@ const Navbar = () => {
   }, [prevScrollY]);
   
   return (
-    <nav className={`flex flex-row justify-between ${show ? `block ${shadows ? 'shadow-slate-900 shadow-2xl' : 'bg-[#25274D] transition duration-500'} bg-[#212345]` : 'hidden'} fixed top-0 w-full z-50`}>
+    <nav className={`flex flex-row justify-between fixed top-0 w-full z-50 transition-transform duration-500 ${show ? 'transform translate-y-0' : 'transform -translate-y-full'} ${shadows ? 'shadow-slate-900 shadow-2xl' : 'bg-[#25274D] transition duration-500'} bg-[#212345]`}>
       <div className="md:mt-8 my-5">
         <Link href="/" className="text-[40px] bg-[#2E9CCA] px-3 py-[2px] rounded-sm md:ml-10 font-bold md:my-5 ml-5">Z</Link>
       </div>
