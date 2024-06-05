@@ -21,7 +21,7 @@ const ArchivedProject = ({ title, description, languages, githubLink, projectLin
     <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto sm:p-0 px-8">
       <div className="bg-[#464866] rounded-md p-5">
         <Title title={title}/>
-        <p>{description}</p>
+        <p className="lg:text-md text-[20px]">{description}</p>
         <div className="flex flex-row my-3 flex-wrap">
           {languages.map((language, index) => (
             <p key={index} className={`py-1 rounded-md text-white ${fira_code.className} mr-5`}>{language}</p>
