@@ -35,7 +35,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', controlNavbar);
     };
-  }, [prevScrollY]);
+  }, [prevScrollY]);  //eslint-disable-line
   
   return (
     <nav className={`flex flex-row justify-between fixed top-0 w-full z-50 transition-transform duration-500 ${show ? 'transform translate-y-0' : 'transform -translate-y-full'} ${shadows ? 'shadow-slate-900 shadow-2xl' : 'bg-[#25274D] transition duration-500'} bg-[#212345]`}>
