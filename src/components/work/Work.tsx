@@ -13,7 +13,7 @@ const Work = () => {
   const workTitleHoverStyle : string = "hover:text-[#29648A] duration-300 transition hover:border-[#29648A] hover:border-b-2 pb-2"
 
   return (
-    <div className="mb-48 lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] m-auto sm:p-0 px-8" id="experience">
+    <div className="sm:mb-60 mb-48 lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] m-auto sm:p-0 px-8" id="experience">
       <Title title="Previous Work" />
       <Separator/>
       <div className="flex flex-row mb-4">

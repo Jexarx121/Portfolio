@@ -5,7 +5,7 @@ import FeaturedProject from "./FeaturedProject";
 
 const Project = () => {
   return (
-    <div className="lg:w-[80%] sm:w-[90%] w-[100%] m-auto mb-48 sm:p-0 px-8" id="projects">
+    <div className="lg:w-[80%] sm:w-[90%] w-[100%] m-auto sm:mb-60 mb-48 sm:p-0 px-8" id="projects">
       <div className="mb-8">
         <Title title="Personal Ventures"/>
         <Separator/>
@@ -21,7 +21,7 @@ const Project = () => {
       </div>
       <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10">
         <ArchivedProject title="Krypto" description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." languages={["React", "JavaScript", "Solidity", "Metamask"]} githubLink="https://github.com/Jexarx121/Krypto" projectLink=""/>
-        <ArchivedProject title="Duel Ascent" description="Multiplayer university game project developed in a group of 6 using Phaser 4 game engine. Responsible for design of all sprites and scenes (in Figma). Contributed to battle scene with card activation and drag and drop functionality." languages={["JavaScript", "Phaser", "Figma", ]} githubLink="https://github.com/nickCompSci/teamProject" projectLink=""/>
+        <ArchivedProject title="Duel Ascent" description="Multiplayer university game project developed in a group of 6 using Phaser 3 game engine. Responsible for design of all sprites and scenes (in Figma). Contributed to battle scene with card activation and drag and drop functionality." languages={["JavaScript", "Phaser", "Figma", ]} githubLink="https://github.com/nickCompSci/teamProject" projectLink=""/>
       </div>
     </div>
   )

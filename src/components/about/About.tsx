@@ -7,7 +7,7 @@ const fira_code = Fira_Code({ subsets: ['latin'] });
 
 const About = () => {
   return (
-    <div className="lg:w-[80%] sm:w-[90%] w-[100%] sm:p-0 px-8 m-auto mb-48" id="about">
+    <div className="lg:w-[80%] sm:w-[90%] w-[100%] sm:p-0 px-8 m-auto sm:mb-60 mb-48" id="about">
       <Title title="About"/>
       <Separator/>
       <div className="flex lg:flex-row flex-col">
@@ -21,7 +21,7 @@ const About = () => {
           <p className="my-5">
             I'm would love the oppurtunity to become an experienced fullstack developer.  If you're interested, here are a few technologies I've been working with recently through personal projects:
           </p>
-          <div className="flex flex-row md:gap-20 gap-40 lg:text-[18px] md:text-[16px]">
+          <div className="flex flex-row md:gap-30 gap-40 lg:text-[18px] md:text-[16px]">
             <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
               <li>JS / TS</li>
               <li>React</li>

@@ -9,7 +9,8 @@ const Intern = () => {
         <li className="py-1">Removed bloated plugins, repetitive page components and redundant CSS to raise website performance by 31%.</li>
         <li className="py-1">Temporarily deployed the website on Amazon Lightsail, ensuring a 99% uptime during testing while providing a better environment for resolving bugs.</li>
         <li className="py-1">Coordinated fortnightly meetings and documented website's plugins, usage and improvements.</li>
-      </ol>
+        <li className="py-1"><b>Technical Skills:</b> WordPress, Lightsail, PHP, CSS, JavaScrip</li>
+        <li className="py-1"><b>Soft Skills:</b> Time Management, Project Planning, Teamwork, Coordinating Meetings, Documentation</li></ol>
     </div>
   )
 }

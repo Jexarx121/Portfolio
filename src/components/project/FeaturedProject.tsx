@@ -25,7 +25,7 @@ const FeaturedProject = ({ title, description, languages, imageLink, githubLink,
         <p className="md:text-[20px] text-[18px] my-4">{description}</p>
         <div className="flex md:flex-row my-3 flex-wrap gap-4 pb-4">
           {languages.map((language, index) => (
-            <p key={index} className={`px-2 py-1 border-[#2E9CCA] rounded-md border-2 text-white ${fira_code.className}`}>{language}</p>
+            <p key={index} className={`px-2 py-1 border-[#2E9CCA] rounded-md border-2 text-[#2e9cca] ${fira_code.className}`}>{language}</p>
           ))}
         </div>
         <div className="flex flex-row gap-5">
