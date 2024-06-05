@@ -19,7 +19,7 @@ const About = () => {
             Fast-forward to today, and I&#39;ve had the pleasure of working as a software engineer in <span className="text-[#2E9CCA]">IBM</span> and as an intern to develop the website for the <span className="text-[#2E9CCA]">Cork Smart Gateway</span> initiative. While they were not directly fullstack focused, I am forever grateful for the experience I gained from my time there.
           </p>
           <p className="my-5">
-            I&#39;m would love the oppurtunity to become an experienced fullstack developer.  If you&#39;re interested, here are a few technologies I&#39;ve been working with recently through personal projects:
+            I would love the oppurtunity to become an experienced fullstack developer.  If you&#39;re interested, here are a few technologies I&#39;ve been working with recently through personal projects:
           </p>
           <div className="flex flex-row md:gap-30 gap-40 lg:text-[18px] md:text-[16px]">
             <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
