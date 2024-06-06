@@ -31,7 +31,7 @@ const Project = () => {
         <Title title="Archived Projects"/>
         <Separator/>
       </div>
-      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10">
+      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10 border-white border-2">
         <ArchivedProject 
           title="Krypto"
           description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." 
@@ -44,6 +44,24 @@ const Project = () => {
           languages={["JavaScript", "Phaser", "Figma", ]} 
           githubLink="https://github.com/nickCompSci/teamProject" 
           projectLink=""/>
+      </div>
+      <div className="lg:w-[80%] md:w-[90%] sm:w-[95%] w-[100%] m-auto flex lg:flex-row flex-col gap-10 border-white border-2 mt-20">
+        <div className="flex-1">
+          <ArchivedProject 
+            title="Krypto"
+            description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." 
+            languages={["React", "JavaScript", "Solidity", "Metamask"]} 
+            githubLink="https://github.com/Jexarx121/Krypto" 
+            projectLink=""/>
+        </div>
+        <div className="flex-1">
+          <ArchivedProject 
+            title="Duel Ascent" 
+            description="Multiplayer university game project developed in a group of 6 using Phaser 3 game engine. Responsible for design of all sprites and scenes (in Figma). Contributed to battle scene with card activation and drag and drop functionality." 
+            languages={["JavaScript", "Phaser", "Figma"]} 
+            githubLink="https://github.com/nickCompSci/teamProject" 
+            projectLink=""/>
+        </div>
       </div>
     </div>
   )
