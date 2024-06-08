@@ -1,5 +1,7 @@
 Aspiring fullstack developer portfolio developed in Next, TypeScript and Tailwind. Website wireframe designed in Figma.
 
+Visit the site: https://portfolio-jexarx121s-projects.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
