@@ -31,7 +31,7 @@ const Project = () => {
         <Title title="Archived Projects"/>
         <Separator/>
       </div>
-      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10 border-white border-2">
+      <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto flex lg:flex-row flex-col gap-10">
         <ArchivedProject 
           title="Krypto"
           description="Website integrated with blockchain and smart contract to exchange ethereum. App can connect to metamask and exchange cryptocurrency to other users through their addresses. Application keeps track of latest transactions." 
