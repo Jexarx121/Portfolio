@@ -21,7 +21,7 @@ const About = () => {
           <p className="my-5">
             I would love the oppurtunity to become an experienced fullstack developer.  If you&#39;re interested, here are a few technologies I&#39;ve been working with recently through personal projects:
           </p>
-          <div className="flex flex-row md:gap-30 gap-40 lg:text-[18px] md:text-[16px]">
+          <div className="flex flex-row md:gap-32 gap-20 lg:text-[18px] md:text-[16px]">
             <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
               <li>JS / TS</li>
               <li>React</li>

@@ -13,6 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        typing: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        },
+        'cursor-blink': {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: '#aaabb8' },
+        },
+      },
+      animation: {
+        typing: 'typing 2s steps(30, end) forwards, cursor-blink 2s steps(30, end) forwards',
+        'cursor-blink': 'cursor-blink 1s steps(1, end) infinite',
+      },
     },
   },
   plugins: [],

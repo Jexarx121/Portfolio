@@ -18,7 +18,7 @@ interface ArchivedProjectProps {
 
 const ArchivedProject = ({ title, description, languages, githubLink, projectLink } : ArchivedProjectProps) => {
   return (
-    <div className="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] m-auto sm:p-0 px-8">
+    <div className="w-[100%] m-auto sm:p-0 px-8">
       <div className="bg-[#464866] rounded-md p-5">
         <Title title={title}/>
         <p className="lg:text-md text-[20px]">{description}</p>
