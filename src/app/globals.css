@@ -25,4 +25,18 @@ p {
   .text-balance {
     text-wrap: balance;
   }
+
+  .typed {
+    @apply overflow-hidden whitespace-nowrap w-0 animate-typing;
+    border-right-width: 2px;
+    border-right-color: black; /* Initial cursor color */
+    animation: typing 2s steps(30, end) forwards, cursor-blink 1.75s steps(30, end) forwards;
+  }
+
+  @media (max-width: 640px) {
+    .typed {
+      white-space: normal;
+      display: inline-block;
+    }
+  }
 }
