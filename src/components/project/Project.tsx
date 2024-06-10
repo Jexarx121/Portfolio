@@ -19,7 +19,7 @@ const Project = () => {
         languages={["React", "TypeScript", "Figma", "Supabase", "Solidity"]} 
         imageLink="/trace.png" 
         githubLink="https://github.com/Jexarx121/Trace" 
-        projectLink=""/>
+        projectLink="https://trace-sand.vercel.app/"/>
       <FeaturedProject 
         title="Next-Post" 
         description="Website to learn Next.js and MongoDB. Allows blog post interactions through CRUD operations in admin dashboard via custom NextAPI. Implemented authentication through credentials and OAuth with NextAuth. Details and blogs stored and fetched from MongoDB." 
