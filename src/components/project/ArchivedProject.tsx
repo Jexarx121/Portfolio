@@ -1,6 +1,6 @@
-import Title from "../helpers/title/title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Fira_Code } from "next/font/google";
@@ -18,14 +18,17 @@ interface ArchivedProjectProps {
 
 const ArchivedProject = ({ title, description, languages, githubLink, projectLink } : ArchivedProjectProps) => {
   return (
-    <div className="w-[100%] m-auto sm:p-0 px-8">
-      <div className="bg-[#464866] rounded-md p-5">
-        <Title title={title}/>
-        <p className="lg:text-md text-[20px]">{description}</p>
-        <div className="flex flex-row my-3 flex-wrap">
-          {languages.map((language, index) => (
-            <p key={index} className={`py-1 rounded-md text-white ${fira_code.className} mr-5`}>{language}</p>
-          ))}
+    <div className="sm:p-0 px-8 flex flex-col flex-grow h-full">
+      <div className="bg-[#464866] rounded-md py-5 px-8 flex flex-col justify-between h-full">
+        <div>
+          <FontAwesomeIcon icon={faFolderOpen} className="text-[#2E9CCA] text-4xl mt-2"/>
+          <h1 className="my-4 text-[35px] font-bold text-[#2E9CCA]">{title}</h1>
+          <p className="lg:text-md text-[20px] mb-4">{description}</p>
+          <div className="flex flex-row my-3 flex-wrap gap-6">
+            {languages.map((language, index) => (
+              <p key={index} className={`py-1 rounded-md ${fira_code.className} text-white`}>{language}</p>
+            ))}
+          </div>
         </div>
         <div className="gap-5 flex flex-row">
           <Link href={githubLink}><FontAwesomeIcon icon={faGithub} className="text-white text-2xl"/></Link>
