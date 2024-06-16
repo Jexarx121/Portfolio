@@ -30,7 +30,7 @@ const About = () => {
             <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
               <li>MongoDB</li>
               <li>Supabase</li>
-              <li>Firebase</li>
+              <li>AWS</li>
             </ol>
           </div>
         </div>
