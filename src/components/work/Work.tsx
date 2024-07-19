@@ -5,10 +5,12 @@ import IBM from "./IBM";
 import Separator from "../helpers/separator/Separator";
 import { useState } from "react";
 import Title from "../helpers/title/title";
+import StudioForty9 from "./StudioForty9";
 
 const Work = () => {
   const [ibm, setIbm] = useState(true);
   const [intern, setIntern] = useState(false);
+  const [studio, setStudio] = useState(false);
 
   const workTitleHoverStyle : string = "hover:text-[#29648A] duration-300 transition"
 
@@ -18,18 +20,17 @@ const Work = () => {
       <Separator/>
       <div className="md:flex flex-row gap-20 mt-10">
         <div className="flex flex-row md:flex-col mb-4 md:gap-4">
+          <h2 className={`font-bold text-[30px] ${studio ? "text-[#29648A] md:border-l-4 rounded-md border-[#29648A]" : `text-white ${workTitleHoverStyle}`} md:mr-0 mr-4 cursor-pointer md:pl-4`}
+            onClick={() => {setStudio(true); setIbm(false); setIntern(false)}}>StudioForty9</h2>
           <h2 className={`font-bold text-[30px] ${ibm ? "text-[#29648A] md:border-l-4 rounded-md border-[#29648A]" : `text-white ${workTitleHoverStyle}`} md:mr-0 mr-4 cursor-pointer md:pl-4`}
-            onClick={() => {setIbm(true); setIntern(false)}}>IBM</h2>
+            onClick={() => {setStudio(false); setIbm(true); setIntern(false)}}>IBM</h2>
           <h2 className={`font-bold text-[30px] ${intern ? "text-[#29648A] md:border-l-4 rounded-md border-[#29648A]" : `text-white ${workTitleHoverStyle}`} md:ml-0 ml-4 cursor-pointer md:pl-4`}
-            onClick={() => {setIbm(false); setIntern(true)}}>UCC</h2>  
+            onClick={() => {setStudio(false); setIbm(false); setIntern(true)}}>UCC</h2>  
         </div>
         <div>
-          {ibm && (
-            <IBM/>
-          )}
-          {intern && (
-            <Intern/>
-          )}
+          {studio && <StudioForty9/>}
+          {ibm && <IBM/>}
+          {intern && <Intern/>}
         </div>
       </div>
     </div> 
