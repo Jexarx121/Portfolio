@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${inter.className} overflow-x-hidden`}>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <Navbar />
-          {children}
+        {children}
         <Footer />
       </body>
     </html>

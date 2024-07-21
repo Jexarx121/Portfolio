@@ -1,3 +1,4 @@
+// TODO: Fill this out later with details
 const Intern = () => {
   return (
     <div className="lg:w-[90%] w-[100%]">
