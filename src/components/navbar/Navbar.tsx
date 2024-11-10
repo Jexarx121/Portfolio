@@ -47,11 +47,11 @@ const Navbar = () => {
         <Link href="#experience" className={`text-white mx-10 ${navLinksStyle}`}>Experience</Link>
         <Link href="#projects" className={`text-white mx-10 ${navLinksStyle}`} >Projects</Link>
         <Link href="#contact" className={`text-white mx-10 ${navLinksStyle}`}>Contact</Link>
-        <a href="/ZhiJieChenCV.pdf" download="ZhiJieChenCV">
+        {/* <a href="/ZhiJieChenCV.pdf" download="ZhiJieChenCV">
           <button className="text-white border-[#2E9CCA] border-2 px-5 py-2 rounded-md mx-10 hover:bg-[#2E9CCA] hover:font-bold transition duration-300">Resume</button>
-        </a>
+        </a> */}
       </div>
-      <div className="md:hidden block my-6">
+        <div className="md:hidden block my-6">
         <FontAwesomeIcon icon={faBars} className="mr-5 text-4xl text-white cursor-pointer" onClick={() => setNavbarMenu(true)}/>
         {navbarMenu && (
           <div className="w-[75%] h-screen absolute z-10 transition duration-500 top-0 right-0 bg-[#464866] flex flex-col items-end overflow-hidden">
