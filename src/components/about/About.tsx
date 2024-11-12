@@ -13,13 +13,13 @@ const About = () => {
       <div className="flex lg:flex-row flex-col">
         <div className="lg:w-[50%] lg:mr-10 lg:text-[20px] sm:text-[18px]">
           <p className="my-5">
-            Hi, I&#39;m Zhi Jie (Zhi is fine) and I like creating things on the internet. My interest in app development came very late due to pre-conceived notion that I was not creative enough. However, through sticking with it (I&#39;m looking at you group projects), I&#39;ve come to thoroughly enjoy it.
+          Hi, I&#39;m Zhi, and I&#39;m passionate about bringing ideas to life on the internet. I didn&#39;t dive into app development until later, having always thought I lacked the creative touch. But after some challenging group projects (looking at you, deadlines!), I&#39;ve found a real love for it.
           </p>
           <p className="my-5">
-            Fast-forward to today, and I&#39;ve had the pleasure of working as a software engineer in <span className="text-[#2E9CCA]">IBM</span> and as an intern to develop the website for the <span className="text-[#2E9CCA]">Cork Smart Gateway</span> initiative. While they were not directly fullstack focused, I am forever grateful for the experience I gained from my time there.
+            Fast-forward to today, and I have the pleasure of working as a Junior QA Engineer in <span className="text-[#2E9CCA]">StudioForty9</span>, an ecommerce web design business that operates on a national scale. My main focus however, is still improving my skills from front to back(end).
           </p>
           <p className="my-5">
-            I would love the oppurtunity to become an experienced fullstack developer.  If you&#39;re interested, here are a few technologies I&#39;ve been working with recently through personal projects:
+            If you&#39;re interested, here are a few technologies I&#39;ve been working with recently through personal projects:
           </p>
           <div className="flex flex-row md:gap-32 gap-8 lg:text-[18px] md:text-[16px] flex-wrap sm:g">
             <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
