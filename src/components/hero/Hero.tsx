@@ -21,7 +21,9 @@ const Hero = () => {
         key={currentIndex}>
         {texts[currentIndex]}
       </h2>
-      <p className="xl:w-[50%] lg:w-[60%] md:w-[75%] text-[20px] font-medium lg:my-6 md:my-5 my-4">I&#39;m from Cork, Ireland. I aspire to tackle diverse challenges and creates impactful solutions through extraordinary applications.</p>
+      <p className="xl:w-[50%] lg:w-[60%] md:w-[75%] text-[20px] font-medium lg:my-6 md:my-5 my-4">
+        Software engineer with experience building and testing full-stack features in JavaScript across QA and engineering roles. Strong in React, Next.js, Node and experienced in Playwright, Cypress with a track record of shipping readable, well-tested code and improving release quality.
+      </p>
       {/* Add arrow to scroll down here */}
     </div>
   );

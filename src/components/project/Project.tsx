@@ -10,7 +10,7 @@ const Project = () => {
         <Title title="Personal Ventures"/>
         <Separator/>
         <p className="lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] text-[20px]">
-          I enjoy working on projects as an outlet for my creativity. As well as that, it provides a fun way to learn new technologies or improve on my current skills. Below are some of my favourite ones.
+          I enjoy working on projects as an outlet for my creativity. As well as that, it provides a fun way to learn new technologies or improve on my current skills (At least that's what I tell myself before my code breaks). Below are some of my favourite ones.
         </p>
       </div>
       <FeaturedProject 
