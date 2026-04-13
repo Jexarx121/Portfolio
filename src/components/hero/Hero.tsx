@@ -22,7 +22,7 @@ const Hero = () => {
         {texts[currentIndex]}
       </h2>
       <p className="xl:w-[50%] lg:w-[60%] md:w-[75%] text-[20px] font-medium lg:my-6 md:my-5 my-4">
-        Software engineer with experience building and testing full-stack features in JavaScript across QA and engineering roles. Strong in React, Next.js, Node and experienced in Playwright, Cypress with a track record of shipping readable, well-tested code and improving release quality.
+        From Ireland, I build impactful applications and enjoy tackling diverse challenges. Experienced in fullstack technologies with a focus on testing and delivering reliable code.
       </p>
       {/* Add arrow to scroll down here */}
     </div>
