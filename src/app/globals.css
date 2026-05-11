@@ -39,4 +39,23 @@ p {
       display: inline-block;
     }
   }
+
+  .reveal-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-section {
+      transform: none;
+      transition: opacity 0.3s ease;
+    }
+  }
 }
