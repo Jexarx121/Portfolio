@@ -1,7 +1,7 @@
 import Separator from "../helpers/separator/Separator"
 import Title from "../helpers/title/title"
-import ArchivedProject from "./ArchivedProject";
 import FeaturedProject from "./FeaturedProject";
+import FolderProjects from "./FolderProjects";
 
 const Project = () => {
   return (
@@ -31,31 +31,8 @@ const Project = () => {
         <Title title="Archived Projects"/>
         <Separator/>
       </div>
-      <div className="lg:w-[80%] md:w-[90%] sm:w-[95%] w-[100%] m-auto flex xl:flex-row flex-col gap-10 flex-grow">
-        <div className="flex-1 flex flex-col">
-          <ArchivedProject 
-            title="Next-Post"
-            description="Fullstack application built with NextJs and MongoDB. CRUD via custom NextAPI. OAuth and normal authentication." 
-            languages={["NextJS", "MongoDB", "NextAuth"]} 
-            githubLink="https://github.com/Jexarx121/next-posts" 
-            projectLink="https://next-posts-alpha.vercel.app/"/>
-        </div>
-        <div className="flex-1 flex flex-col">
-          <ArchivedProject 
-            title="Krypto"
-            description="Blockchain website to exchange crypto using metamask. Can also view the most recent transactions too." 
-            languages={["ReactJS", "Tailwind", "Solidity"]} 
-            githubLink="https://github.com/Jexarx121/Krypto" 
-            projectLink=""/>
-        </div>
-        <div className="flex-1 flex flex-col">
-          <ArchivedProject 
-            title="Duel Ascent" 
-            description="Multiplayer roguelike deck-builder game built in university developed in Phaser 3 engine JavaScript." 
-            languages={["JavaScript", "Phaser", "Figma"]} 
-            githubLink="https://github.com/nickCompSci/teamProject" 
-            projectLink=""/>
-        </div>
+      <div className="lg:w-[80%] md:w-[90%] sm:w-[95%] w-[100%] m-auto">
+        <FolderProjects />
       </div>
     </div>
   )

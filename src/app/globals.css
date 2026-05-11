@@ -58,4 +58,21 @@ p {
       transition: opacity 0.3s ease;
     }
   }
+
+  .sticker-torn {
+    clip-path: polygon(
+      4% 0%,
+      100% 0%,
+      100% 100%,
+      4% 100%,
+      0% 87%,
+      6% 75%,
+      0% 63%,
+      5% 50%,
+      0% 37%,
+      6% 24%,
+      0% 12%
+    );
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.35));
+  }
 }
