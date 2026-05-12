@@ -13,7 +13,7 @@ const About = () => {
             <div className="flex lg:flex-row flex-col">
                 <div className="lg:w-[50%] lg:mr-10 lg:text-[20px] sm:text-[18px]">
                     <p className="my-5">
-                        Hi, I&#39;m Zhi, and I&#39;m passionate about bringing ideas to life on the internet. I didn&#39;t dive into app development until later, having always thought I lacked the creative touch. However, as with any skill, I tried and eventually I&#39;ve found a real love for it.
+                        Hi, I&#39;m Zhi, and I&#39;m passionate about bringing ideas to life on the internet. I didn&#39;t dive into app development until later, having always thought I lacked the creative touch. However as with any skill at the start, I tried, practiced, cried and eventually I&#39;ve found a real love for it.
                     </p>
                     <p className="my-5">
                         Fast-forward to today, and I spend my days at <span className="text-[#2E9CCA]">StudioForty9</span> building Shopify storefronts and making sure they don&#39;t break — it&#39;s the best of both worlds. Shipping features and writing the tests to catch my own bugs.

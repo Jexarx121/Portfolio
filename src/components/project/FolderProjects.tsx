@@ -13,19 +13,20 @@ const projects = [
         projectLink: "https://next-posts-alpha.vercel.app/"
     },
     {
+        title: "Duæl Ascent",
+        description: "Multiplayer, roguelike, deck-builder game built in university developed in Phaser 3 engine JavaScript. Designed all cards and sprites. Developed battle scene and card logic.",
+        languages: ["JavaScript", "Phaser", "Figma"],
+        githubLink: "https://github.com/nickCompSci/teamProject",
+        projectLink: ""
+    },
+    {
         title: "Krypto",
-        description: "Blockchain website to exchange crypto using metamask. Can also view the most recent transactions too.",
+        description: "Blockchain React website to exchange crypto using metamask API. Can also view the most recent transactions too.",
         languages: ["ReactJS", "Tailwind", "Solidity"],
         githubLink: "https://github.com/Jexarx121/Krypto",
         projectLink: ""
     },
-    {
-        title: "Duel Ascent",
-        description: "Multiplayer, roguelike, deck-builder game built in university developed in Phaser 3 engine JavaScript.",
-        languages: ["JavaScript", "Phaser", "Figma"],
-        githubLink: "https://github.com/nickCompSci/teamProject",
-        projectLink: ""
-    }
+
 ]
 
 const rotations = [-2, 1.5, -1]
@@ -41,9 +42,9 @@ export default function FolderProjects() {
                     <button
                         key={i}
                         onClick={() => setActive(i)}
-                        className={`px-5 py-2 rounded-t-lg text-sm font-medium transition-colors relative z-10 ${active === i
+                        className={`px-5 py-2 rounded-t-lg text-sm font-medium transition relative z-10 ${active === i
                             ? "bg-[#464866] text-[#2E9CCA] border border-b-0 border-[#5a5d7a] -mb-px"
-                            : "bg-[#363854] text-[#aaabb8] hover:text-[#ccc]"
+                            : "bg-[#363854] text-[#aaabb8] hover:text-[#ccc] hover:-translate-y-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-1 after:translate-y-full after:bg-[#464866]"
                             }`}
                     >
                         {p.title}
