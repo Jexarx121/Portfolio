@@ -21,7 +21,7 @@ const About = () => {
                     <p className="my-5">
                         Here&#39;s some of what I&#39;ve been working with lately with the rest listed below:
                     </p>
-                    <div className="flex flex-row md:gap-32 gap-8 lg:text-[18px] md:text-[16px] flex-wrap sm:g">
+                    <div className="flex flex-row md:gap-32 sm:gap-8 gap-4 lg:text-[18px] md:text-[16px] flex-wrap sm:g">
                         <ol className={`list-inside list-disc text-[#aaabb8] marker:text-[#2e9cca] ${fira_code.className}`}>
                             <li>Shopify Liquid</li>
                             <li>Playwright</li>

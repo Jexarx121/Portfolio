@@ -59,6 +59,17 @@ p {
     }
   }
 
+  @keyframes slideInRight {
+    from { transform: translateX(30px); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+  }
+  @keyframes slideInLeft {
+    from { transform: translateX(-30px); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+  }
+  .slide-in-right { animation: slideInRight 0.25s ease-out forwards; }
+  .slide-in-left  { animation: slideInLeft  0.25s ease-out forwards; }
+
   .sticker-torn {
     clip-path: polygon(
       4% 0%,

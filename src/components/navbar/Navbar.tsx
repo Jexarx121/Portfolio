@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -47,6 +48,9 @@ const Navbar = () => {
         <Link href="#experience" className={`text-white mx-10 ${navLinksStyle}`}>Experience</Link>
         <Link href="#projects" className={`text-white mx-10 ${navLinksStyle}`} >Projects</Link>
         <Link href="#contact" className={`text-white mx-10 ${navLinksStyle}`}>Contact</Link>
+        <span className="inline-block border-l border-[#5a5d7a] h-5 mx-2 self-center"/>
+        <Link href="https://github.com/Jexarx121" target="_blank" rel="noreferrer" className="text-white mx-3 hover:text-[#2E9CCA] transition duration-300"><FontAwesomeIcon icon={faGithub} className="text-xl"/></Link>
+        <Link href="https://www.linkedin.com/in/zjchen402/" target="_blank" rel="noreferrer" className="text-white mx-3 mr-10 hover:text-[#2E9CCA] transition duration-300"><FontAwesomeIcon icon={faLinkedin} className="text-xl"/></Link>
         {/* <a href="/ZhiJieChenCV.pdf" download="ZhiJieChenCV">
           <button className="text-white border-[#2E9CCA] border-2 px-5 py-2 rounded-md mx-10 hover:bg-[#2E9CCA] hover:font-bold transition duration-300">Resume</button>
         </a> */}
@@ -61,6 +65,10 @@ const Navbar = () => {
               <Link href="#experience" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)}>Experience</Link>
               <Link href="#projects" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)} >Projects</Link>
               <Link href="#contact" className={`text-[#2e9cca] sm:text-xl text-lg my-6 text-right w-full`} onClick={() => setNavbarMenu(false)}>Contact</Link>
+              <div className="border-t border-[#5a5d7a] w-full mt-4 pt-6 flex justify-end gap-6">
+                <Link href="https://github.com/Jexarx121" target="_blank" rel="noreferrer" className="text-white hover:text-[#2E9CCA] transition duration-300"><FontAwesomeIcon icon={faGithub} className="text-2xl"/></Link>
+                <Link href="https://www.linkedin.com/in/zjchen402/" target="_blank" rel="noreferrer" className="text-white hover:text-[#2E9CCA] transition duration-300"><FontAwesomeIcon icon={faLinkedin} className="text-2xl"/></Link>
+              </div>
             </div>
           </div>
         )}

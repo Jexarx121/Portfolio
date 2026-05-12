@@ -22,7 +22,7 @@ const Hero = () => {
                 {texts[currentIndex]}
             </h2>
             <p className="xl:w-[55%] lg:w-[60%] md:w-[75%] text-[20px] font-medium lg:my-6 md:my-5 my-4">
-                Designing, developing and testing impactful applications. Experienced in fullstack technologies and currently working on nationwide ecommerce platforms in <b>StudioForty9</b>
+                Designing, developing and testing impactful applications. Experienced in fullstack technologies and currently working on nationwide ecommerce platforms in <b>StudioForty9</b>.
             </p>
             {/* Add arrow to scroll down here */}
         </div>
